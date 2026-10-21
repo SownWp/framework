@@ -3,9 +3,217 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>FrameWork</title>
+  <title>Guide visuel</title>
+  <link rel="stylesheet" href="./assets/css/main.css">
 </head>
 <body>
-    <h1>FRAMEWORK CSS</h1>
+<main class="style-guide">
+  <!-- En-tête -->
+  <header class="style-guide__header">
+    <h1 class="style-guide__main-title">Guide visuel</h1>
+    <p class="style-guide__subtitle">
+      Valeurs relevées sur la maquette : couleurs, boutons, espacements et tailles.
+    </p>
+  </header>
+
+  <!-- Section 1 : Couleurs -->
+  <section class="style-guide__section">
+    <h2 class="style-guide__section-title">Couleurs</h2>
+    <div class="swatch-grid">
+      <div class="swatch-card">
+        <div class="scene-card-container">
+          <div class="scene-card scene-card--text-main">
+            <h3 class="scene-card__title">Texte principal</h3>
+          </div>
+          <span class="scene-card__caption">Couleur #1C1B2E · texte #FFFFFF</span>
+        </div>
+      </div>
+      <div class="swatch-card">
+        <div class="scene-card-container">
+          <div class="scene-card scene-card--text-body">
+            <h3 class="scene-card__title">Texte courant</h3>
+          </div>
+          <span class="scene-card__caption">Couleur #3A3950 · texte #FFFFFF</span>
+        </div>
+      </div>
+      <div class="swatch-card">
+        <div class="scene-card-container">
+          <div class="scene-card scene-card--text-muted">
+            <h3 class="scene-card__title">Texte secondaire</h3>
+          </div>
+          <span class="scene-card__caption">Couleur #6B6A80 · texte #FFFFFF</span>
+        </div>
+      </div>
+      <div class="swatch-card">
+        <div class="scene-card-container">
+          <div class="scene-card scene-card--bg-page">
+            <h3 class="scene-card__title">Fond de page</h3>
+          </div>
+          <span class="scene-card__caption">Couleur #FFFFFF · texte #1C1B2E</span>
+        </div>
+      </div>
+      <div class="swatch-card">
+        <div class="scene-card-container">
+          <div class="scene-card scene-card--border-subtle">
+            <h3 class="scene-card__title">Bordures</h3>
+          </div>
+          <span class="scene-card__caption">Couleur #E3E5EA · texte #1C1B2E</span>
+        </div>
+      </div>
+      <div class="swatch-card">
+        <div class="scene-card-container">
+          <div class="scene-card scene-card--primary">
+            <h3 class="scene-card__title">Couleur principale</h3>
+          </div>
+          <span class="scene-card__caption">Couleur #CB402A · texte #FFFFFF</span>
+        </div>
+      </div>
+      <div class="swatch-card">
+        <div class="scene-card-container">
+          <div class="scene-card scene-card--danger">
+            <h3 class="scene-card__title">Erreur</h3>
+          </div>
+          <span class="scene-card__caption">Couleur #B3261E · texte #FFFFFF</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 4 : Espacements & Rayons -->
+  <div class="style-guide__row">
+    <!-- Espacements -->
+    <section class="style-guide__section style-guide__section--half">
+      <h2 class="style-guide__section-title">Espacements</h2>
+      <div class="spacing-list">
+        <div class="spacing-item">
+          <div class="spacing-item__box spacing-item__box--xs"></div>
+          <span class="spacing-item__label">8 px</span>
+        </div>
+        <div class="spacing-item">
+          <div class="spacing-item__box spacing-item__box--sm"></div>
+          <span class="spacing-item__label">16 px</span>
+        </div>
+        <div class="spacing-item">
+          <div class="spacing-item__box spacing-item__box--md"></div>
+          <span class="spacing-item__label">24 px</span>
+        </div>
+        <div class="spacing-item">
+          <div class="spacing-item__box spacing-item__box--lg"></div>
+          <span class="spacing-item__label">40 px</span>
+        </div>
+        <div class="spacing-item">
+          <div class="spacing-item__box spacing-item__box--xl"></div>
+          <span class="spacing-item__label">64 px</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Rayons -->
+    <section class="style-guide__section style-guide__section--half">
+      <h2 class="style-guide__section-title">Rayons</h2>
+      <div class="radius-list">
+        <div class="radius-item">
+          <div class="radius-item__box radius-item__box--sm"></div>
+          <span class="radius-item__label">6 px</span>
+        </div>
+        <div class="radius-item">
+          <div class="radius-item__box radius-item__box--md"></div>
+          <span class="radius-item__label">12 px</span>
+        </div>
+        <div class="radius-item">
+          <div class="radius-item__box radius-item__box--pill"></div>
+          <span class="radius-item__label">999 px</span>
+        </div>
+      </div>
+    </section>
+  </div>
+  <!-- Section : Boutons -->
+  <section class="style-guide__section">
+    <h2 class="style-guide__section-title">Boutons</h2>
+    <div class="button-grid">
+      <div class="button-item">
+        <button class="btn btn--primary">Principal</button>
+        <span class="button-item__label">Principal</span>
+      </div>
+      <div class="button-item">
+        <button class="btn btn--hover">Survol</button>
+        <span class="button-item__label">Principal, survol</span>
+      </div>
+      <div class="button-item">
+        <button class="btn btn--secondary">Secondaire</button>
+        <span class="button-item__label">Secondaire</span>
+      </div>
+      <div class="button-item">
+        <button class="btn btn--outline">Contour</button>
+        <span class="button-item__label">Contour</span>
+      </div>
+      <div class="button-item">
+        <button class="btn btn--focus">Focus clavier</button>
+        <span class="button-item__label">Focus clavier</span>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Section : Carte d'artiste -->
+  <section class="style-guide__section">
+    <h2 class="style-guide__section-title">Carte d'artiste</h2>
+    <p class="style-guide__subtitle">Version standard (programme) et version tête d'affiche (accueil).</p>
+    
+    <div class="artist-cards-grid">
+      <!-- Carte 1 -->
+      <article class="artist-card">
+        <div class="artist-card__image-wrapper">
+          <img src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?auto=format&fit=crop&w=600&q=80" alt="Marée Basse">
+        </div>
+        <div class="artist-card__content">
+          <div>
+            <span class="scene-badge scene-badge--lac">Scène du Lac</span>
+          </div>
+          <h3 class="artist-card__title">Marée Basse</h3>
+          <p class="artist-card__meta">Rock · Ven. 9 - 20 h 15</p>
+          <a href="#" class="artist-card__link">Voir la fiche &rarr;</a>
+        </div>
+      </article>
+
+      <!-- Carte 2 -->
+      <article class="artist-card">
+        <div class="artist-card__image-wrapper">
+          <img src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?auto=format&fit=crop&w=600&q=80" alt="Lune Rousse">
+        </div>
+        <div class="artist-card__content">
+          <div>
+            <span class="scene-badge scene-badge--lac">Scène du Lac</span>
+          </div>
+          <h3 class="artist-card__title">LUNE ROUSSE</h3>
+          <p class="artist-card__meta">Pop · Ven. 9 - 22 h 30</p>
+          <a href="#" class="artist-card__link">Voir la fiche &rarr;</a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Section : Crédits photos -->
+  <section class="style-guide__section">
+    <h2 class="style-guide__section-title">Crédits photos</h2>
+    <div class="photo-credits">
+      <p>Photographies issues de Wikimedia Commons, sous licences libres (CC0, CC BY, CC BY-SA).</p>
+      <ul>
+        <li>Meshuggah Stage Design 2022, Ancienne Belgique, Belgium. 06 — Kinglevel — CC BY-SA 4.0</li>
+        <li>Vibrant drum kit illuminated with blue lighting at a live music event in an indoor venue — Shixart1985 — CC BY 2.0</li>
+        <li>Live rock band performance under stage lights during an outdoor festival in the evening — Shixart1985 — CC BY 2.0</li>
+        <li>Meshuggah Stage Design 2022, Ancienne Belgique, Belgium. 08 — Kinglevel — CC BY-SA 4.0</li>
+        <li>DJ at an Electronic Music Festival (Unsplash) — Lucas Gallone lucasgallone — CC0</li>
+        <li>Recording a concert (Unsplash) — veeterzy veeterzy — CC0</li>
+        <li>Meshuggah 2017 Live Birmingham Lighting — Kinglevel, Edvard Hansson — CC BY-SA 4.0</li>
+        <li>Colorful jazz concert (Unsplash) — Jens Thekkeveettil jenstnc — CC0</li>
+        <li>Wiki loves Music - Hamburg-5591 — Wuselig — CC BY-SA 4.0</li>
+        <li>Drums (1168809371) — Bernhard Hanakam — CC BY-SA 3.0</li>
+        <li>Wiki loves Music - Hamburg-5591 — Wuselig — CC BY-SA 4.0</li>
+        <li>Meshuggah Stage Design 2022, Ancienne Belgique, Belgium. 05 — Kinglevel — CC BY-SA 4.0</li>
+      </ul>
+    </div>
+  </section>
+</main>
 </body>
 </html>
