@@ -1,0 +1,46 @@
+@use "../abstracts" as *;
+
+.btn {
+  display: inline-block;
+  font-family: inherit;
+  font-size: $font-size-base;
+  font-weight: 500;
+  line-height: 1.5;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: 1px solid transparent;
+  border-radius: $border-radius;
+
+  &--primary {
+    color: $color-light;
+    background-color: $color-primary;
+    border-color: $color-primary;
+
+    &:hover {
+      background-color: $color-primary-hover;
+      border-color: $color-primary-hover;
+    }
+  }
+
+  &--secondary {
+    color: $color-light;
+    background-color: $color-secondary;
+    border-color: $color-secondary;
+
+    &:hover {
+      background-color: $color-secondary-hover;
+      border-color: $color-secondary-hover;
+    }
+  }
+
+  &--sm {
+    font-size: $font-size-base * 0.875;
+    border-radius: $border-radius * 0.75;
+  }
+
+  &--lg {
+    font-size: $font-size-base * 1.25;
+    border-radius: $border-radius * 1.25;
+  }
+}
