@@ -1,18 +1,40 @@
-/* Error: Can't find stylesheet to import.
- *   ,
- * 1 | @forward 'layout';
- *   | ^^^^^^^^^^^^^^^^^
- *   '
- *   assets/scss/layout/_index.scss 1:1  @use
- *   assets/scss/main.scss 2:1           root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Can't find stylesheet to import.\a   \2577 \a 1 \2502  @forward 'layout';\a   \2502  ^^^^^^^^^^^^^^^^^\a   \2575 \a   assets/scss/layout/_index.scss 1:1  @use\a   assets/scss/main.scss 2:1           root stylesheet";
+.btn {
+  display: inline-block;
+  font-family: inherit;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.5;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: 1px solid transparent;
+  border-radius: 5px;
 }
+.btn--primary {
+  color: #e5eff9;
+  background-color: #66ff00;
+  border-color: #66ff00;
+}
+.btn--primary:hover {
+  background-color: #aa305a;
+  border-color: #aa305a;
+}
+.btn--secondary {
+  color: #e5eff9;
+  background-color: #32281b;
+  border-color: #32281b;
+}
+.btn--secondary:hover {
+  background-color: #8dc6ff;
+  border-color: #8dc6ff;
+}
+.btn--sm {
+  font-size: 21px;
+  border-radius: 3.75px;
+}
+.btn--lg {
+  font-size: 30px;
+  border-radius: 6.25px;
+}
+
+/*# sourceMappingURL=main.css.map */
