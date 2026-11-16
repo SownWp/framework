@@ -46,6 +46,7 @@
   background-color: #e5eff9;
   border: 1px solid #0d1014;
   border-radius: 12px;
+  width: 20%;
 }
 .card__image {
   display: block;
@@ -59,6 +60,7 @@
   flex-direction: column;
   gap: 16px;
   padding: 24px;
+  width: 100%;
 }
 .card__title {
   margin: 0;
