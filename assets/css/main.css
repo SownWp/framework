@@ -1,3 +1,18 @@
+/* Error: Can't find stylesheet to import.
+ *   ,
+ * 1 | @forward 'layout';
+ *   | ^^^^^^^^^^^^^^^^^
+ *   '
+ *   assets/scss/layout/_index.scss 1:1  @use
+ *   assets/scss/main.scss 2:1           root stylesheet */
 
-
-/*# sourceMappingURL=main.css.map */
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Can't find stylesheet to import.\a   \2577 \a 1 \2502  @forward 'layout';\a   \2502  ^^^^^^^^^^^^^^^^^\a   \2575 \a   assets/scss/layout/_index.scss 1:1  @use\a   assets/scss/main.scss 2:1           root stylesheet";
+}
