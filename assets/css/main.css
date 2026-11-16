@@ -60,7 +60,6 @@
   flex-direction: column;
   gap: 16px;
   padding: 24px;
-  width: 100%;
 }
 .card__title {
   margin: 0;
